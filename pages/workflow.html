@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工作流 - ProspectusInsight Agent</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html">ProspectusInsight</a>
+    <button class="nav-toggle" aria-label="打开导航">☰</button>
+    <nav class="site-nav">
+      <a href="../index.html">首页</a>
+      <a href="demo.html">Demo</a>
+      <a href="workflow.html" class="active">工作流</a>
+      <a href="reliability.html">可靠性</a>
+      <a href="about.html">关于项目</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-title reveal">
+      <p class="eyebrow">Agent Workflow</p>
+      <h1>从 PDF 到可复核报告</h1>
+      <p>系统围绕招股说明书这一明确场景，设计“解析、抽取、生成、推送、复核”的智能体工作流。</p>
+    </section>
+
+    <section class="timeline">
+      <div class="step reveal"><span>01</span><h3>上传招股说明书</h3><p>用户上传一份公开招股说明书 PDF，并可选填写公司名称。</p></div>
+      <div class="step reveal"><span>02</span><h3>PDF 文本解析</h3><p>使用 PyMuPDF 提取文本，保留页码，识别扫描版或空文本异常。</p></div>
+      <div class="step reveal"><span>03</span><h3>文本清洗与筛选</h3><p>去除重复页眉页脚，优先保留公司概况、业务、财务、风险和募资相关内容。</p></div>
+      <div class="step reveal"><span>04</span><h3>LLM 信息抽取</h3><p>调用 OpenAI-compatible API，要求模型输出严格 JSON 并附证据片段。</p></div>
+      <div class="step reveal"><span>05</span><h3>结构化输出</h3><p>保存 JSON、CSV 和 Markdown 报告，便于展示、复盘和人工核验。</p></div>
+      <div class="step reveal"><span>06</span><h3>飞书机器人推送</h3><p>将短摘要推送到飞书群，用于团队协同和讨论提醒。</p></div>
+      <div class="step reveal"><span>07</span><h3>人工复核</h3><p>对关键数据、证据片段、风险因素和尽调问题进行人工检查。</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="back-home" href="../index.html">回首页</a>
+    <p>工作流强调证据追踪、异常处理和人工复核。</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

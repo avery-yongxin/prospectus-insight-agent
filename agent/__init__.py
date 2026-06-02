@@ -1,0 +1,2 @@
+"""ProspectusInsight Agent package."""
+

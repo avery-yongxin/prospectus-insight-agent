@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.streamlit/
+outputs/*.json
+outputs/*.csv
+outputs/*.md
+outputs/*.txt
+!outputs/README_outputs.txt
+

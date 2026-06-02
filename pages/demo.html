@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo - ProspectusInsight Agent</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html">ProspectusInsight</a>
+    <button class="nav-toggle" aria-label="打开导航">☰</button>
+    <nav class="site-nav">
+      <a href="../index.html">首页</a>
+      <a href="demo.html" class="active">Demo</a>
+      <a href="workflow.html">工作流</a>
+      <a href="reliability.html">可靠性</a>
+      <a href="about.html">关于项目</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-title reveal">
+      <p class="eyebrow">Static Demo</p>
+      <h1>前端静态演示</h1>
+      <p>粘贴一段招股说明书片段，或使用示例文本，页面会用 JavaScript 生成模拟解读结果。真实 AI 解读请运行 Streamlit 智能体应用。</p>
+    </section>
+
+    <section class="demo-layout">
+      <div class="input-panel reveal">
+        <label for="prospectusInput">招股说明书片段</label>
+        <textarea id="prospectusInput" placeholder="请粘贴公司概况、主营业务、风险因素或募集资金用途等公开披露文本。"></textarea>
+        <div class="button-row">
+          <button class="btn ghost" id="sampleBtn">使用示例文本</button>
+          <button class="btn primary" id="analyzeBtn">开始智能解读</button>
+        </div>
+        <p class="notice" id="inputNotice">本页仅做静态交互演示，不会上传文件，也不会调用模型 API。</p>
+      </div>
+
+      <div class="result-panel reveal" id="resultPanel">
+        <div class="empty-state">等待输入文本后生成模拟结果。</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="back-home" href="../index.html">回首页</a>
+    <p>静态 Demo 不替代 Streamlit 智能体应用，关键数据需要人工复核。</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/demo.js"></script>
+</body>
+</html>
+

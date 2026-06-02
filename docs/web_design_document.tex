@@ -1,0 +1,118 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+
+\definecolor{brand}{HTML}{0B6B5B}
+\definecolor{accent}{HTML}{0E8FA6}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=brand,
+  urlcolor=accent
+}
+
+\title{\textbf{ProspectusInsight Agent 网页设计说明文档}}
+\author{课程网页设计大作业}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{网站主题}
+
+本网站主题为 ProspectusInsight Agent：招股说明书智能解读与公司画像生成助手。网站用于展示一个 AI 智能体课程项目，强调公开资料整理、青年学习成长、数字金融素养、理性研究、诚信分析和审慎判断。
+
+\section{设计目标}
+
+网站面向金融专业学生、行研实习生、投行/咨询/数据分析初学者。设计目标包括：
+
+\begin{itemize}[leftmargin=2em]
+  \item 清晰展示项目功能、工作流、可靠性原则和课程价值。
+  \item 使用现代金融科技视觉风格，提高网页设计作业的展示效果。
+  \item 让静态页面可以独立打开，不依赖后端服务或构建工具。
+  \item 明确提示真实 AI 功能需要运行 Streamlit 应用，静态网页仅用于展示。
+\end{itemize}
+
+\section{页面内容说明}
+
+\subsection{首页 index.html}
+
+首页包含项目标题 ProspectusInsight Agent、副标题“招股说明书智能解读与公司画像生成助手”、Slogan“让复杂上市文件变成清晰的公司画像”。页面包含 hero 区、核心功能卡片、使用场景、项目价值和开始体验按钮。首页还明确说明静态网站用于项目展示，真实 AI 功能请运行 Streamlit 应用。
+
+\textbf{截图占位：此处插入首页完整截图。}
+
+\subsection{Demo 页面 pages/demo.html}
+
+Demo 页面提供文本框，用户可以粘贴招股说明书片段，也可以点击“使用示例文本”。点击“开始智能解读”后，JavaScript 会生成模拟结果，包括公司画像、业务模式、核心财务摘要、风险因素、募资用途、尽调问题和飞书推送摘要。页面明确标注这是前端静态演示，不会调用真实模型 API。
+
+\textbf{截图占位：此处插入 Demo 页面输入状态截图。}
+
+\textbf{截图占位：此处插入 Demo 页面生成结果截图。}
+
+\subsection{工作流页面 pages/workflow.html}
+
+工作流页面用时间线展示智能体流程：上传招股说明书、PDF 文本解析、文本清洗与筛选、LLM 信息抽取、结构化输出、飞书机器人推送、人工复核。该页面突出项目的智能体逻辑结构。
+
+\textbf{截图占位：此处插入工作流页面截图。}
+
+\subsection{可靠性页面 pages/reliability.html}
+
+可靠性页面展示六项原则：只基于上传资料、未识别不编造、重要结论附证据、不生成评级、不替代专业判断、关键数据人工复核。该页面用于体现项目边界和风险控制意识。
+
+\textbf{截图占位：此处插入可靠性页面截图。}
+
+\subsection{关于项目页面 pages/about.html}
+
+关于项目页面包含项目背景、服务对象、真实痛点、技术栈、课程要求对应、社会价值、团队分工占位符和未来拓展方向。该页面帮助评阅者快速理解项目完整性。
+
+\textbf{截图占位：此处插入关于项目页面截图。}
+
+\section{使用方法}
+
+网站可以直接打开 \texttt{code/index.html}，也可以使用 WebStorm 或 Live Server 打开。导航栏提供“首页、Demo、工作流、可靠性、关于项目”入口。每个页面底部均设置“回首页”按钮，满足多页面网站和返回首页要求。
+
+\section{技术点}
+
+\begin{longtable}{|p{4cm}|p{9cm}|}
+\hline
+\textbf{技术点} & \textbf{说明} \\
+\hline
+HTML5 & 构建语义化页面结构，包括 header、main、section、footer。 \\
+\hline
+CSS3 & 实现深色金融科技风格、玻璃拟态、发光边框、bento grid、响应式布局和关键帧动画。 \\
+\hline
+JavaScript & 实现移动端导航、滚动出现动画、Demo 示例文本和模拟结果生成。 \\
+\hline
+响应式设计 & 使用 grid、flex、clamp 和 media query 适配电脑与手机。 \\
+\hline
+无需构建 & 不使用 React、Vue 或 npm build，页面可以直接打开。 \\
+\hline
+\end{longtable}
+
+\section{视觉风格}
+
+网站采用深色背景、动态网格、半透明面板、绿色与青色高亮、少量金色强调，营造现代金融科技感。布局上使用 hero 区、bento grid、时间线和信息卡片，使内容具有层次感和展示性。
+
+\section{价值导向}
+
+网站主题积极健康，强调服务青年学习成长、提升数字金融素养、理性研究、诚信分析和审慎判断。项目不承诺结果完全准确，不输出交易导向结论，关键数据必须人工复核。
+
+\section{截图补充说明}
+
+如果需要提交带截图的 PDF，可按以下顺序手动补图：
+
+\begin{enumerate}[leftmargin=2em]
+  \item 首页完整截图。
+  \item Demo 页面输入示例截图。
+  \item Demo 页面生成结果截图。
+  \item 工作流页面截图。
+  \item 可靠性页面截图。
+  \item 关于项目页面截图。
+\end{enumerate}
+
+\end{document}
+

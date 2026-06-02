@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProspectusInsight Agent</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">ProspectusInsight</a>
+    <button class="nav-toggle" aria-label="打开导航">☰</button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">首页</a>
+      <a href="pages/demo.html">Demo</a>
+      <a href="pages/workflow.html">工作流</a>
+      <a href="pages/reliability.html">可靠性</a>
+      <a href="pages/about.html">关于项目</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">AI Agent for Prospectus Reading</p>
+        <h1>ProspectusInsight Agent</h1>
+        <p class="subtitle">招股说明书智能解读与公司画像生成助手</p>
+        <p class="slogan">让复杂上市文件变成清晰的公司画像</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="pages/demo.html">开始体验</a>
+          <a class="btn ghost" href="pages/workflow.html">查看工作流</a>
+        </div>
+        <p class="notice">真实 AI 功能请运行 Streamlit 应用；本静态网站用于课程项目展示与网页设计作业。</p>
+      </div>
+      <div class="hero-panel reveal">
+        <div class="terminal-card">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <pre><code>PDF 上传
+  -> 文本解析
+  -> LLM 结构化抽取
+  -> Markdown / CSV / JSON
+  -> 飞书摘要
+  -> 人工复核</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Core Features</p>
+        <h2>核心功能</h2>
+      </div>
+      <div class="bento-grid">
+        <article class="feature-card large reveal">
+          <span class="card-index">01</span>
+          <h3>招股说明书解析</h3>
+          <p>从 PDF 中提取文本，保留页码线索，帮助学习者快速定位公司概况、业务、财务、风险和募资用途。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-index">02</span>
+          <h3>公司画像生成</h3>
+          <p>把长文档整理成公司画像、业务模式、产品服务、收入来源和行业标签。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-index">03</span>
+          <h3>结构化输出</h3>
+          <p>自动保存 JSON、CSV 和 Markdown 报告，适合课程展示、复盘和后续人工核验。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-index">04</span>
+          <h3>飞书协同</h3>
+          <p>生成短摘要并推送到飞书群，方便小组成员同步阅读任务和尽调问题。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Learning Scenarios</p>
+        <h2>使用场景</h2>
+        <p>面向金融专业学生、行研实习生、投行/咨询/数据分析初学者，解决招股说明书篇幅长、信息密度高、整理成本高的问题。</p>
+      </div>
+      <div class="scenario-list reveal">
+        <div><strong>课堂作业</strong><span>快速形成可复核的公司研究初稿。</span></div>
+        <div><strong>实习训练</strong><span>练习从公开披露材料中提取关键事实。</span></div>
+        <div><strong>小组协同</strong><span>将摘要同步到飞书，形成讨论入口。</span></div>
+        <div><strong>理性研究</strong><span>强调证据、边界和人工复核。</span></div>
+      </div>
+    </section>
+
+    <section class="section value-band reveal">
+      <p class="eyebrow">Project Value</p>
+      <h2>服务青年学习成长，提升数字金融素养</h2>
+      <p>项目把 AI Agent、文件解析、结构化输出、飞书协同和静态网页展示结合起来，帮助学习者理解公开披露文件，建立诚信分析、审慎判断和证据意识。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="back-home" href="index.html">回首页</a>
+    <p>ProspectusInsight Agent · 公开资料整理与学习辅助工具 · 不构成投资建议</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
